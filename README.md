@@ -146,7 +146,7 @@ mlflow ui
 ### 📥 Link Dataset Public (Nếu muốn tìm hiểu thêm)
 
 - Dataset **Breast Cancer Wisconsin (Diagnostic)** được sử dụng trong dự án này có thể tải từ Kaggle tại:  
-  [Breast Cancer Wisconsin Data](https://www.kaggle.com/datasets/uciml/breast-cancer-wisconsin-data)  
+  [Breast Cancer Wisconsin Data](https://www.kaggle.com/datasets/uciml/breast-cancer-wisconsin-data)  (version 2)
   Tuy nhiên, bạn cũng có thể tìm dataset này đã được bao gồm trong thư mục dự án, không cần phải tải lại từ Kaggle.
 
 ---

@@ -34,7 +34,7 @@ Vui lòng sử dụng môi trường ảo để cài đặt đúng các thư vi�
 
 ---
 
-## Hướng dẫn cài đặt và chạy project bằng WSL + VS Code( trên hệ điều hành Windows)
+## Hướng dẫn cài đặt và chạy project bằng WSL + VS Code (trên hệ điều hành Windows)
 
 ### 1. Cài đặt các công cụ cần thiết
 
@@ -72,7 +72,31 @@ sudo apt install python3 python3-venv -y
 #### Bước 7: Kết nối Ubuntu (WSL) với VS Code
 - Mở VS Code → Nhấn `F1` → Chọn **WSL: Connect to Ubuntu**
 
-#### Bước 8: Tạo môi trường ảo Python
+---
+
+### 3. Tải thư mục mã nguồn và tạo môi trường ảo
+
+#### Bước 8: Tải thư mục code từ GitHub
+- Bạn có thể **clone repository** bằng cách sử dụng Git:
+  ```bash
+  git clone https://github.com/NguyenVenToan/CS317.P21---Lab-1.git
+  ```
+- Hoặc nếu bạn không muốn sử dụng Git, bạn có thể **tải file ZIP** của repository từ GitHub:
+  - Truy cập trang GitHub của dự án.
+  - Bấm vào nút **Code** (nút màu xanh lá cây).
+  - Chọn **Download ZIP** để tải thư mục mã nguồn về máy.
+
+#### Bước 9: Di chuyển vào thư mục mã nguồn đã tải
+- Sau khi tải về (hoặc clone), di chuyển vào thư mục dự án:
+  ```bash
+  cd /mnt/path/to/your/cloned/project
+  ```
+- Ví dụ:
+  ```bash
+  cd /mnt/c/Users/toann/Downloads/breast-cancer-metaflow/flow
+  ```
+
+#### Bước 10: Tạo môi trường ảo Python
 ```bash
 python3 -m venv .venv
 source .venv/bin/activate
@@ -80,24 +104,19 @@ source .venv/bin/activate
 
 ---
 
-### 3. Chạy project từ đầu đến cuối
+### 4. Cài đặt các thư viện cần thiết và chạy project
 
-#### Bước 9: Di chuyển đến thư mục chứa mã nguồn
-```bash
-cd /mnt/c/Users/toann/Downloads/breast-cancer-metaflow/flow
-```
-
-#### Bước 10: Cài đặt các thư viện cần thiết
+#### Bước 11: Cài đặt các thư viện cần thiết
 ```bash
 pip install -r requirements.txt
 ```
 
-#### Bước 11: Chạy pipeline
+#### Bước 12: Chạy pipeline
 ```bash
 python3 breast_cancer_flow.py run
 ```
 
-#### Bước 12: Xem log bằng MLflow
+#### Bước 13: Xem log bằng MLflow
 ```bash
 mlflow ui
 ```
@@ -124,4 +143,5 @@ mlflow ui
 - Truy cập: http://127.0.0.1:5000 (hoặc port tùy chỉnh nếu có xung đột) để xem log các lần chạy trước đó.
 
 ---
+
 

@@ -143,5 +143,12 @@ mlflow ui
 - Truy cập: http://127.0.0.1:5000 (hoặc port tùy chỉnh nếu có xung đột) để xem log các lần chạy trước đó.
 
 ---
+### 📥 Link Dataset Public (Nếu muốn tìm hiểu thêm)
+
+- Dataset **Breast Cancer Wisconsin (Diagnostic)** được sử dụng trong dự án này có thể tải từ Kaggle tại:  
+  [Breast Cancer Wisconsin Data](https://www.kaggle.com/datasets/uciml/breast-cancer-wisconsin-data)  
+  Tuy nhiên, bạn cũng có thể tìm dataset này đã được bao gồm trong thư mục dự án, không cần phải tải lại từ Kaggle.
+
+---
 
 

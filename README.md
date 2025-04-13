@@ -43,7 +43,7 @@ Dưới đây là phiên bản hoàn chỉnh, đã thêm phần hướng dẫn *
 - Khởi động lại máy sau khi cài đặt nếu được yêu cầu.
 
 #### Bước 3: Cài đặt Ubuntu từ Microsoft Store
-- Mở Microsoft Store, tìm và cài **Ubuntu 22.04 LTS**.
+- Mở Microsoft Store, tìm và cài **Ubuntu 22.04.5 LTS**.
 
 #### Bước 4: Cài đặt Extension WSL trong VS Code
 - Mở VS Code → Extensions (Ctrl+Shift+X)
@@ -115,4 +115,3 @@ mlflow ui
 
 ---
 
-Bạn muốn mình convert phần này sang Markdown sẵn để copy vào file `README.md` không?

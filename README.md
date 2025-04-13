@@ -29,7 +29,7 @@
 
 ## 🔧 Chú ý
 
-Tất cả các thư viện Python cần thiết, bao gồm **phiên bản cụ thể**, đã được liệt kê trong file [`requirements.txt`](./requirements.txt).  
+Tất cả các thư viện Python cần thiết, bao gồm **phiên bản cụ thể**, đã được liệt kê trong file `requirements.txt'.  
 Vui lòng sử dụng môi trường ảo để cài đặt đúng các thư viện này và tránh xung đột với hệ thống.
 
 ---

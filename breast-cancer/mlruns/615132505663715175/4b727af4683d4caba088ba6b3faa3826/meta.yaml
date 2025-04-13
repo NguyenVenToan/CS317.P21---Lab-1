@@ -1,0 +1,15 @@
+artifact_uri: file:///mnt/c/Users/toann/Downloads/breast-cancer/mlruns/615132505663715175/4b727af4683d4caba088ba6b3faa3826/artifacts
+end_time: 1744544240697
+entry_point_name: ''
+experiment_id: '615132505663715175'
+lifecycle_stage: active
+run_id: 4b727af4683d4caba088ba6b3faa3826
+run_name: skittish-asp-114
+run_uuid: 4b727af4683d4caba088ba6b3faa3826
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744544112770
+status: 3
+tags: []
+user_id: toan

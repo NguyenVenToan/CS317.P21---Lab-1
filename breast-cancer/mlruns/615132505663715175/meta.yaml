@@ -1,0 +1,6 @@
+artifact_location: file:///mnt/c/Users/toann/Downloads/breast-cancer/mlruns/615132505663715175
+creation_time: 1744544112389
+experiment_id: '615132505663715175'
+last_update_time: 1744544112389
+lifecycle_stage: active
+name: breast_cancer_experiment

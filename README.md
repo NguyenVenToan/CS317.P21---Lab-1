@@ -26,6 +26,9 @@
 * Vũ Anh Tuấn - 22521614 
 
 ---
+🔧 Chú ý
+Tất cả các thư viện Python cần thiết, bao gồm phiên bản cụ thể, đã được liệt kê trong file requirements.txt.
+Vui lòng sử dụng môi trường ảo để cài đặt đúng các thư viện này và tránh xung đột với hệ thống.
 
 ## Hướng dẫn cài đặt và chạy project bằng WSL + VS Code
 Dưới đây là phiên bản hoàn chỉnh, đã thêm phần hướng dẫn **nếu chỉ muốn xem log bằng MLflow UI**:
@@ -50,7 +53,7 @@ Dưới đây là phiên bản hoàn chỉnh, đã thêm phần hướng dẫn *
 - Tìm `WSL` (biểu tượng chim cánh cụt) và cài đặt extension do **Microsoft phát triển**.
 
 #### Bước 5: Khởi động Ubuntu lần đầu
-- Chạy Ubuntu → Đặt username và password theo hướng dẫn.
+- Chạy Ubuntu → Đặt username và password.
 
 ---
 

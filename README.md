@@ -26,12 +26,15 @@
 * Vũ Anh Tuấn - 22521614 
 
 ---
-🔧 Chú ý
-Tất cả các thư viện Python cần thiết, bao gồm phiên bản cụ thể, đã được liệt kê trong file requirements.txt.
+
+## 🔧 Chú ý
+
+Tất cả các thư viện Python cần thiết, bao gồm **phiên bản cụ thể**, đã được liệt kê trong file [`requirements.txt`](./requirements.txt).  
 Vui lòng sử dụng môi trường ảo để cài đặt đúng các thư viện này và tránh xung đột với hệ thống.
 
-## Hướng dẫn cài đặt và chạy project bằng WSL + VS Code
-Dưới đây là phiên bản hoàn chỉnh, đã thêm phần hướng dẫn **nếu chỉ muốn xem log bằng MLflow UI**:
+---
+
+## Hướng dẫn cài đặt và chạy project bằng WSL + VS Code( trên hệ điều hành Windows)
 
 ### 1. Cài đặt các công cụ cần thiết
 
@@ -99,6 +102,10 @@ python3 breast_cancer_flow.py run
 mlflow ui
 ```
 - Truy cập: http://127.0.0.1:5000 để xem giao diện MLflow.
+- Nếu **port 5000** đã bị chiếm, bạn có thể chỉ định port khác bằng cách thêm `--port`:
+  ```bash
+  mlflow ui --port 5001
+  ```
 - Nhấn `Ctrl + C` để thoát.
 
 ---
@@ -114,7 +121,7 @@ source .venv/bin/activate
 ```bash
 mlflow ui
 ```
-- Truy cập: http://127.0.0.1:5000 để xem log các lần chạy trước đó.
+- Truy cập: http://127.0.0.1:5000 (hoặc port tùy chỉnh nếu có xung đột) để xem log các lần chạy trước đó.
 
 ---
 

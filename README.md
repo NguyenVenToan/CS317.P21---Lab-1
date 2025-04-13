@@ -25,5 +25,94 @@
 * Đào Văn Tuân - 22521599
 * Vũ Anh Tuấn - 22521614 
 
-## ĐỒ ÁN MÔN HỌC
+---
 
+## Hướng dẫn cài đặt và chạy project bằng WSL + VS Code
+Dưới đây là phiên bản hoàn chỉnh, đã thêm phần hướng dẫn **nếu chỉ muốn xem log bằng MLflow UI**:
+
+### 1. Cài đặt các công cụ cần thiết
+
+#### Bước 1: Cài đặt Visual Studio Code (VS Code)
+- Tải VS Code tại: https://code.visualstudio.com/
+
+#### Bước 2: Cài đặt WSL (Windows Subsystem for Linux)
+- Mở **Command Prompt** với quyền **Administrator**, sau đó chạy:
+  ```bash
+  wsl --install
+  ```
+- Khởi động lại máy sau khi cài đặt nếu được yêu cầu.
+
+#### Bước 3: Cài đặt Ubuntu từ Microsoft Store
+- Mở Microsoft Store, tìm và cài **Ubuntu 22.04 LTS**.
+
+#### Bước 4: Cài đặt Extension WSL trong VS Code
+- Mở VS Code → Extensions (Ctrl+Shift+X)
+- Tìm `WSL` (biểu tượng chim cánh cụt) và cài đặt extension do **Microsoft phát triển**.
+
+#### Bước 5: Khởi động Ubuntu lần đầu
+- Chạy Ubuntu → Đặt username và password theo hướng dẫn.
+
+---
+
+### 2. Cài đặt môi trường phát triển
+
+#### Bước 6: Cập nhật và cài Python
+```bash
+sudo apt update
+sudo apt upgrade -y
+sudo apt install python3 python3-venv -y
+```
+
+#### Bước 7: Kết nối Ubuntu (WSL) với VS Code
+- Mở VS Code → Nhấn `F1` → Chọn **WSL: Connect to Ubuntu**
+
+#### Bước 8: Tạo môi trường ảo Python
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+```
+
+---
+
+### 3. Chạy project từ đầu đến cuối
+
+#### Bước 9: Di chuyển đến thư mục chứa mã nguồn
+```bash
+cd /mnt/c/Users/toann/Downloads/breast-cancer-metaflow/flow
+```
+
+#### Bước 10: Cài đặt các thư viện cần thiết
+```bash
+pip install -r requirements.txt
+```
+
+#### Bước 11: Chạy pipeline
+```bash
+python3 breast_cancer_flow.py run
+```
+
+#### Bước 12: Xem log bằng MLflow
+```bash
+mlflow ui
+```
+- Truy cập: http://127.0.0.1:5000 để xem giao diện MLflow.
+- Nhấn `Ctrl + C` để thoát.
+
+---
+
+### ✅ Nếu chỉ muốn xem log bằng MLflow (không cần chạy lại pipeline)
+
+#### Bước 1: Kích hoạt môi trường ảo
+```bash
+source .venv/bin/activate
+```
+
+#### Bước 2: Mở giao diện MLflow UI
+```bash
+mlflow ui
+```
+- Truy cập: http://127.0.0.1:5000 để xem log các lần chạy trước đó.
+
+---
+
+Bạn muốn mình convert phần này sang Markdown sẵn để copy vào file `README.md` không?

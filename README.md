@@ -27,6 +27,93 @@
 
 ---
 
+# 🩺 Breast Cancer Prediction Pipeline with Metaflow & MLflow
+
+Đây là một pipeline học máy đầy đủ, giúp **dự đoán khả năng ác tính của ung thư vú** dựa trên bộ dữ liệu [Breast Cancer Wisconsin](https://www.kaggle.com/datasets/uciml/breast-cancer-wisconsin-data). Dự án sử dụng **Metaflow** để quản lý pipeline và **MLflow** để log mô hình, tham số và đánh giá.
+
+---
+
+## 📌 Tính năng nổi bật
+
+- 🔁 Pipeline đầu-cuối (end-to-end) với **Metaflow**
+- 🤖 Huấn luyện và so sánh 3 mô hình: **Random Forest**, **SVM**, và **Logistic Regression**
+- 🔍 Tùy chọn **tìm siêu tham số (GridSearchCV)** cho cả 3 mô hình
+- 📊 Tự động log mô hình, tham số, kết quả và file với **MLflow**
+- 📁 Ghi lại thông tin bộ dữ liệu (CSV, metadata JSON)
+- 📉 Tạo và lưu hình ảnh ma trận nhầm lẫn, báo cáo đánh giá dưới dạng JSON
+
+---
+
+## ⚙️ Công nghệ sử dụng
+
+| Công cụ         | Mục đích                                           |
+|------------------|-----------------------------------------------------|
+| **Metaflow**     | Xây dựng và điều phối pipeline                     |
+| **MLflow**       | Theo dõi thực nghiệm, log mô hình và kết quả       |
+| **Scikit-learn** | Huấn luyện mô hình và đánh giá                     |
+| **Matplotlib, Seaborn** | Vẽ biểu đồ (ma trận nhầm lẫn)             |
+| **Pandas / Numpy** | Xử lý và thao tác dữ liệu                        |
+
+---
+
+## 🔬 Mô tả các bước trong Pipeline
+
+### 1. `start`
+- Kiểm tra tồn tại và đọc file `breast-cancer.csv`
+
+### 2. `preprocessing`
+- Xoá cột dư thừa (`id`, `Unnamed: 32`)
+- Chuyển đổi nhãn: `M` → 1 (ác tính), `B` → 0 (lành tính)
+- Tách features `X` và label `y`
+
+### 3. `split`
+- Tách tập huấn luyện và kiểm tra với `test_size` và `random_state` cấu hình được
+
+### 4. `train_model`
+- Khởi tạo thực nghiệm MLflow
+- Ghi log các tham số, thông tin bộ dữ liệu (link, version)
+- Huấn luyện 3 mô hình:
+  - Nếu `hyperparameter_tuning=True`: dùng `GridSearchCV` để tìm siêu tham số tốt nhất
+- Lưu mô hình bằng `mlflow.sklearn.log_model`
+
+### 5. `evaluate`
+- Dự đoán với từng mô hình và tính các chỉ số:
+  - Accuracy, Precision, Recall, F1-score
+- Vẽ ma trận nhầm lẫn (confusion matrix)
+- Ghi log tất cả kết quả, báo cáo, và hình ảnh lên MLflow
+
+### 6. `end`
+- Thông báo kết thúc pipeline
+
+---
+
+## 🧪 Bộ dữ liệu
+
+- Nguồn: [Kaggle - Breast Cancer Wisconsin](https://www.kaggle.com/datasets/uciml/breast-cancer-wisconsin-data)
+- Gồm: 569 mẫu, 30 đặc trưng số, nhãn chẩn đoán là `M` hoặc `B`
+
+---
+
+## 📁 Artifact được log vào MLflow
+
+- Các mô hình đã huấn luyện (Random Forest, SVM, Logistic Regression)
+- Các chỉ số đánh giá: Accuracy, Precision, Recall, F1
+- Hình ảnh ma trận nhầm lẫn (`confusion_matrices.png`)
+- Báo cáo đánh giá dạng JSON (`classification_report_*.json`)
+- File CSV dữ liệu gốc và file metadata `dataset_info.json`
+
+---
+
+## 💡 Điểm mới / Sáng tạo
+
+- ✅ So sánh nhiều mô hình trong cùng pipeline
+- 🔍 Dễ dàng chuyển đổi giữa chế độ huấn luyện thường và tìm siêu tham số
+- 📦 Ghi lại không chỉ mô hình mà cả thông tin bộ dữ liệu để tái lập thực nghiệm
+- 📊 Tự động hóa quá trình đánh giá và trực quan hóa
+- 🔄 Cấu trúc linh hoạt, dễ tùy chỉnh và mở rộng
+
+---
+
 ## 🔧 Chú ý
 
 Tất cả các thư viện Python cần thiết, bao gồm **phiên bản cụ thể**, đã được liệt kê trong file requirements.txt.  

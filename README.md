@@ -89,7 +89,7 @@
 
 ## 🧪 Bộ dữ liệu
 
-- Nguồn: [Kaggle - Breast Cancer Wisconsin](https://www.kaggle.com/datasets/uciml/breast-cancer-wisconsin-data)
+- Nguồn: [Kaggle - Breast Cancer Wisconsin](https://www.kaggle.com/datasets/uciml/breast-cancer-wisconsin-data) (version 2)
 - Gồm: 569 mẫu, 30 đặc trưng số, nhãn chẩn đoán là `M` hoặc `B`
 
 ---

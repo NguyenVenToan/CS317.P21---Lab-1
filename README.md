@@ -70,7 +70,7 @@ sudo apt install python3 python3-venv -y
 ```
 
 #### Bước 7: Kết nối Ubuntu (WSL) với VS Code
-- Mở VS Code → Nhấn `F1` → Chọn **WSL: Connect to Ubuntu**
+- Mở VS Code → Nhấn `F1` → Chọn **WSL: Connect to WSL using Distro..** → Chọn **Ubuntu-22.04**
 
 ---
 
@@ -98,7 +98,10 @@ sudo apt install python3 python3-venv -y
 
 #### Bước 10: Tạo môi trường ảo Python
 ```bash
+# Nếu chưa có môi trường ảo
 python3 -m venv .venv
+
+# Kích hoạt môi trường ảo
 source .venv/bin/activate
 ```
 
@@ -111,12 +114,29 @@ source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
-#### Bước 12: Chạy pipeline
+**Bước 12**: (Tuỳ chọn) Chỉnh sửa đường dẫn trong `mlruns`  
+Để đảm bảo MLflow log đúng các artifacts, bạn cần sửa lại đường dẫn trong `mlruns` nếu project đã được copy từ máy khác hoặc chuyển từ Windows sang WSL.
+
+- Vào thư mục:
+```bash
+cd mlruns/<experiment_id>/
+```
+
+- Mở file `meta.yaml` trong thư mục experiment và các run con:
+  - Sửa trường `artifact_location` và `artifact_uri` thành đúng đường dẫn thực tế trong hệ thống Ubuntu, ví dụ:
+    ```yaml
+    artifact_location: file:///home/toan/breast-cancer-metaflow/mlruns/0
+    ```
+  - Sửa `user_id` thành **username** bạn đã đặt khi cài Ubuntu.
+
+✅ *Việc này rất quan trọng vì nếu không sửa, MLflow sẽ không hiển thị hoặc lưu đúng artifact như mô hình, hình ảnh, checkpoints,...*
+
+#### Bước 13: Chạy pipeline
 ```bash
 python3 breast_cancer_flow.py run
 ```
 
-#### Bước 13: Xem log bằng MLflow
+#### Bước 14: Xem log bằng MLflow
 ```bash
 mlflow ui
 ```
@@ -133,10 +153,34 @@ mlflow ui
 
 #### Bước 1: Kích hoạt môi trường ảo
 ```bash
+# Nếu chưa có môi trường ảo
+python3 -m venv .venv
+
+# Kích hoạt môi trường ảo
 source .venv/bin/activate
 ```
+```bash
+# Nếu chưa có môi trường ảo
+pip install -r requirements.txt
+```
+#### Bước 2: Chỉnh sửa đường dẫn trong `mlruns`(Bắt buộc) 
+Để đảm bảo MLflow log đúng các artifacts, bạn cần sửa lại đường dẫn trong `mlruns` nếu project đã được copy từ máy khác hoặc chuyển từ Windows sang WSL.
 
-#### Bước 2: Mở giao diện MLflow UI
+- Vào thư mục:
+```bash
+cd mlruns/<experiment_id>/
+```
+
+- Mở file `meta.yaml` trong thư mục experiment và các run con:
+  - Sửa trường `artifact_location` và `artifact_uri` thành đúng đường dẫn thực tế trong hệ thống Ubuntu, ví dụ:
+    ```yaml
+    artifact_location: file:///home/toan/breast-cancer-metaflow/mlruns/0
+    ```
+  - Sửa `user_id` thành **username** bạn đã đặt khi cài Ubuntu.
+
+✅ *Việc này rất quan trọng vì nếu không sửa, MLflow sẽ không hiển thị hoặc lưu đúng artifact như mô hình, hình ảnh, checkpoints,...*
+
+#### Bước 3: Mở giao diện MLflow UI
 ```bash
 mlflow ui
 ```

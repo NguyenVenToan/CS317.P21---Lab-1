@@ -274,12 +274,23 @@ mlflow ui
 - Truy cập: http://127.0.0.1:5000 (hoặc port tùy chỉnh nếu có xung đột) để xem log các lần chạy trước đó.
 
 ---
-### 📥 Link Dataset Public (Nếu muốn tìm hiểu thêm)
 
-- Dataset **Breast Cancer Wisconsin (Diagnostic)** được sử dụng trong dự án này có thể tải từ Kaggle tại:  
-  [Breast Cancer Wisconsin Data](https://www.kaggle.com/datasets/uciml/breast-cancer-wisconsin-data)  (version 2)
-  
-- Tuy nhiên, bạn cũng có thể tìm dataset này đã được bao gồm trong thư mục dự án, không cần phải tải lại từ Kaggle.
+## 🎥 Video demo
+
+🎬 **Video ngắn demo cách chạy training pipeline:**  
+[👉 Xem tại đây trên YouTube](https://youtu.be/2eHGDafKRcA)
+
+Nội dung video bao gồm:
+
+- Cách chạy pipeline 
+- Quá trình tự động hóa pipeline với **Metaflow**
+- **Tracking đầy đủ** trên MLflow:  
+  - File log  
+  - Siêu tham số (hyperparameters)  
+  - Các mô hình (checkpoints)  
+  - Hình ảnh đánh giá (confusion matrix)  
+  - Báo cáo đánh giá (classification report)
+- Trình bày giao diện trực quan của **MLflow UI**
 
 ---
 

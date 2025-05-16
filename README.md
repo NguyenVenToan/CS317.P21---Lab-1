@@ -301,6 +301,7 @@ Nội dung video bao gồm:
 * Python 3.10 (hoặc tương thích)
 * Docker (phiên bản >= 20.x)
 * Docker Compose (phiên bản >= 1.29.x)
+* Tải đầy đủ 5 file trong thư mục deploy_api về máy, bao gồm: Dockerfile, docker-compose.yml, main.py, model_rf.pkl, requirements.txt
 
 ### 2. Cài đặt và chạy
 

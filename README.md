@@ -7,6 +7,36 @@
 <!-- Title -->
 <h1 align="center"><b>CS317.P21 - PHÁT TRIỂN VÀ VẬN HÀNH HỆ THỐNG MÁY HỌC</b></h1>
 
+## 📑 Mục lục
+
+* [Giới thiệu môn học](#gioithieumonhoc)
+* [Giảng viên hướng dẫn](#giangvien)
+* [Thành viên nhóm](#thanhvien)
+* [Breast Cancer Prediction Pipeline with Metaflow & MLflow](#breast-cancer-prediction-pipeline-with-metaflow--mlflow)
+
+  * [Tính năng nổi bật](#-tinh-nang-noi-bat)
+  * [Công nghệ sử dụng](#-cong-nghe-su-dung)
+  * [Mô tả các bước trong Pipeline](#-mo-ta-cac-buoc-trong-pipeline)
+* [Bộ dữ liệu](#-bo-du-lieu)
+* [Artifact được log vào MLflow](#-artifact-duoc-log-vao-mlflow)
+* [Điểm mới / Sáng tạo](#-diem-moi--sang-tao)
+* [Chú ý](#-chu-y)
+* [Hướng dẫn cài đặt và chạy project bằng WSL + VS Code (trên Windows)](#-huong-dan-cai-dat-va-chay-project-bang-wsl--vs-code-tren-windows)
+
+  * [Cài đặt các công cụ cần thiết](#-cai-dat-cac-cong-cu-can-thiet)
+  * [Cài đặt môi trường phát triển](#-cai-dat-moi-truong-phat-trien)
+  * [Tải thư mục mã nguồn và tạo môi trường ảo](#-tai-thu-muc-ma-nguon-va-tao-moi-truong-ao)
+  * [Cài đặt các thư viện cần thiết và chạy project](#-cai-dat-cac-thu-vien-can-thiet-va-chay-project)
+  * [Xem log bằng MLflow](#-xem-log-bang-mlflow)
+* [Video demo](#-video-demo)
+* [Hướng dẫn cài đặt môi trường và cách chạy code](#-huong-dan-cai-dat-moi-truong-va-cach-chay-code)
+
+  * [Yêu cầu chung](#-yeu-cau-chung)
+  * [Cài đặt và chạy](#-cai-dat-va-chay)
+  * [Chạy trên server được cấp](#-chay-tren-server-duoc-cap)
+  * [Lưu ý](#-luu-y)
+* [Video demo](#-video-demo-1)
+
 ## GIỚI THIỆU MÔN HỌC
 <a name="gioithieumonhoc"></a>
 * *Tên môn học*: Phát triển và vận hành hệ thống máy học

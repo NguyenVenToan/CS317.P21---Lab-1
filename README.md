@@ -293,9 +293,6 @@ Nội dung video bao gồm:
 - Trình bày giao diện trực quan của **MLflow UI**
 
 ---
-Dưới đây là phần hướng dẫn bạn có thể dùng trong file `README.md` cho mục “Cách chạy trên server được cấp” theo đúng các bước bạn nêu, đồng thời bổ sung thêm phần cài đặt môi trường và chạy trên local để đủ yêu cầu:
-
----
 
 ## Hướng dẫn cài đặt môi trường và cách chạy code
 
@@ -420,7 +417,7 @@ http://<IP_SERVER>:8000/docs
 
 ---
 
-### 5. Lưu ý
+### 4. Lưu ý
 
 * Luôn khai báo rõ phiên bản thư viện trong `requirements.txt` để tránh lỗi do cập nhật thư viện.
 * Khi cập nhật code, cần build lại image và push lên Docker Hub trước khi deploy trên server.
@@ -430,6 +427,27 @@ http://<IP_SERVER>:8000/docs
 
 🎬 **Video ngắn demo cách chạy local và trên server:**  
 [👉 Xem tại đây trên YouTube]()
+
+Nội dung video bao gồm:
+
+**Trên local:**
+
+- Chạy container từ image vừa build
+- Gọi thử API (bằng Postman hoặc cURL)
+- Nhận kết quả phản hồi từ mô hình
+- Push image đã bbuild lên Docker Hub
+---
+
+**Trên server:**
+
+- SSH vào server được cấp
+- Cài đặt Docker và Docker Compose
+- Pull image từ Docker Hub (hoặc copy từ local lên server)
+- Cấu hình Docker Compose để chạy API
+- Khởi động container bằng `docker-compose`
+- Gọi thử API từ máy local đến server và xác nhận phản hồi thành công
+---
+
 
 
 

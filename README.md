@@ -433,8 +433,7 @@ Nội dung video bao gồm:
 **Trên local:**
 
 - Chạy container từ image vừa build
-- Gọi thử API (bằng Postman hoặc cURL)
-- Nhận kết quả phản hồi từ mô hình
+- Test API trên [http://localhost:8000/docs] và xác nhận phản hồi thành công
 - Push image đã bbuild lên Docker Hub
 ---
 
@@ -445,7 +444,7 @@ Nội dung video bao gồm:
 - Pull image từ Docker Hub (hoặc copy từ local lên server)
 - Cấu hình Docker Compose để chạy API
 - Khởi động container bằng `docker-compose`
-- Gọi thử API từ máy local đến server và xác nhận phản hồi thành công
+-  Test API trên [http://localhost:8000/docs] và xác nhận phản hồi thành công
 ---
 
 

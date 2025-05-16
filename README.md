@@ -7,6 +7,25 @@
 <!-- Title -->
 <h1 align="center"><b>CS317.P21 - PHÁT TRIỂN VÀ VẬN HÀNH HỆ THỐNG MÁY HỌC</b></h1>
 
+## GIỚI THIỆU MÔN HỌC
+<a name="gioithieumonhoc"></a>
+* *Tên môn học*: Phát triển và vận hành hệ thống máy học
+* *Mã môn học*: CS317.P21
+* *Ngày bắt đầu*: 17/02/2025
+* *Năm học*: 2024-2025
+
+## GIẢNG VIÊN HƯỚNG DẪN
+<a name="giangvien"></a>
+* *Đỗ Văn Tiến* - tiendv@uit.edu.vn
+* *Lê Trần Trọng Khiêm* - khiemltt@uit.edu.vn
+
+## THÀNH VIÊN NHÓM
+<a name="thanhvien"></a>
+* Nguyễn Vẹn Toàn - 22521492
+* Đào Văn Tuân - 22521599
+* Vũ Anh Tuấn - 22521614 
+
+---
 # 🩺 Breast Cancer Prediction Pipeline with Metaflow & MLflow
 
 Đây là một pipeline học máy đầy đủ, giúp **dự đoán khả năng ác tính của ung thư vú** dựa trên bộ dữ liệu [Breast Cancer Wisconsin](https://www.kaggle.com/datasets/uciml/breast-cancer-wisconsin-data). Dự án sử dụng **Metaflow** để quản lý pipeline và **MLflow** để log mô hình, tham số và đánh giá.

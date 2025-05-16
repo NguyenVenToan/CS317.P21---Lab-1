@@ -305,13 +305,7 @@ Dưới đây là phần hướng dẫn bạn có thể dùng trong file `README
 * Docker (phiên bản >= 20.x)
 * Docker Compose (phiên bản >= 1.29.x)
 
-### 2. Cài đặt môi trường Python (Local)
-
-Dưới đây là phiên bản đã được chỉnh sửa của phần README theo yêu cầu của bạn:
-
----
-
-## 🚀 Hướng dẫn chạy
+### 2. Cài đặt và chạy
 
 #### 🔹 Trường hợp 1: **Dùng image có sẵn từ DockerHub** (Nhanh gọn)
 
@@ -355,9 +349,39 @@ docker compose up
 
 ---
 
-### 4. Cách chạy trên server được cấp
+### 3. Cách chạy trên server được cấp
+#### ✅ Bước 1: SSH vào server
 
-Thực hiện các bước sau khi SSH vào server:
+```bash
+ssh <your-username>@<server-ip>
+```
+
+---
+
+#### ✅ Bước 2: Cài đặt Docker và Docker Compose trên server (chỉ 1 lần)
+
+```bash
+sudo apt-get update
+sudo apt-get install ca-certificates curl
+
+# Thêm key Docker GPG
+sudo install -m 0755 -d /etc/apt/keyrings
+sudo curl -fsSL https://download.docker.com/linux/ubuntu/gpg -o /etc/apt/keyrings/docker.asc
+sudo chmod a+r /etc/apt/keyrings/docker.asc
+
+# Thêm Docker repo vào sources
+echo \
+  "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.asc] https://download.docker.com/linux/ubuntu \
+  $(. /etc/os-release && echo "${UBUNTU_CODENAME:-$VERSION_CODENAME}") stable" | \
+  sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+
+# Cài Docker và Docker Compose
+sudo apt-get update
+sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+```
+
+---
+#### ✅ Bước 3: Kéo image và chạy container
 
 ```bash
 mkdir breast_cancer_api
@@ -402,6 +426,10 @@ http://<IP_SERVER>:8000/docs
 * Khi cập nhật code, cần build lại image và push lên Docker Hub trước khi deploy trên server.
 
 ---
+## 🎥 Video demo
+
+🎬 **Video ngắn demo cách chạy local và trên server:**  
+[👉 Xem tại đây trên YouTube]()
 
 
 

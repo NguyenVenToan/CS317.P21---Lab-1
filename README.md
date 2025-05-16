@@ -293,5 +293,115 @@ Nội dung video bao gồm:
 - Trình bày giao diện trực quan của **MLflow UI**
 
 ---
+Dưới đây là phần hướng dẫn bạn có thể dùng trong file `README.md` cho mục “Cách chạy trên server được cấp” theo đúng các bước bạn nêu, đồng thời bổ sung thêm phần cài đặt môi trường và chạy trên local để đủ yêu cầu:
+
+---
+
+## Hướng dẫn cài đặt môi trường và cách chạy code
+
+### 1. Yêu cầu chung
+
+* Python 3.10 (hoặc tương thích)
+* Docker (phiên bản >= 20.x)
+* Docker Compose (phiên bản >= 1.29.x)
+
+### 2. Cài đặt môi trường Python (Local)
+
+Dưới đây là phiên bản đã được chỉnh sửa của phần README theo yêu cầu của bạn:
+
+---
+
+## 🚀 Hướng dẫn chạy
+
+#### 🔹 Trường hợp 1: **Dùng image có sẵn từ DockerHub** (Nhanh gọn)
+
+Không cần build lại image, chỉ cần chạy:
+
+```bash
+docker compose up
+```
+
+> 📝 Mặc định `docker-compose.yml` đã sử dụng image được push sẵn lên DockerHub (`<your-dockerhub-username>/<your-image-name>`).
+
+---
+
+#### 🔹 Trường hợp 2: **Muốn tự build lại image từ mã nguồn**
+
+1. **Chỉnh sửa `docker-compose.yml`:**
+
+   * Tìm dòng:
+
+     ```yaml
+     image: <your-dockerhub-username>/<your-image-name>
+     ```
+   * **Bỏ dòng này hoặc thay bằng tên image bạn muốn build**, ví dụ:
+
+     ```yaml
+     image: my-fastapi-app:latest
+     ```
+
+2. **Chạy lệnh build và khởi động ứng dụng:**
+
+   ```bash
+   docker compose up --build
+   ```
+
+> ⚠️ Nếu không sửa `image:` trong `docker-compose.yml`, Docker sẽ dùng image từ DockerHub thay vì build mới từ Dockerfile.
+
+---
+* Mở trình duyệt truy cập [http://localhost:8000/docs](http://localhost:8000/docs) để test API.
+
+🛑 **Để thoát ứng dụng**, nhấn `Ctrl + C` trong terminal.
+
+---
+
+### 4. Cách chạy trên server được cấp
+
+Thực hiện các bước sau khi SSH vào server:
+
+```bash
+mkdir breast_cancer_api
+cd breast_cancer_api
+```
+
+Tạo file `docker-compose.yml` với nội dung:
+
+```yaml
+version: "3.8"
+
+services:
+  api:
+    image: toannguyenuit/breast_cancer_api:1.0
+    ports:
+      - "8000:8000"
+```
+
+Kéo image từ Docker Hub về:
+
+```bash
+docker pull toannguyenuit/breast_cancer_api:1.0
+```
+
+Chạy container:
+
+```bash
+docker compose up -d
+```
+
+Truy cập API qua:
+
+```
+http://<IP_SERVER>:8000/docs
+```
+
+---
+
+### 5. Lưu ý
+
+* Luôn khai báo rõ phiên bản thư viện trong `requirements.txt` để tránh lỗi do cập nhật thư viện.
+* Khi cập nhật code, cần build lại image và push lên Docker Hub trước khi deploy trên server.
+
+---
+
 
 

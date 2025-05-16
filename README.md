@@ -30,6 +30,31 @@
 
 Đây là một pipeline học máy đầy đủ, giúp **dự đoán khả năng ác tính của ung thư vú** dựa trên bộ dữ liệu [Breast Cancer Wisconsin](https://www.kaggle.com/datasets/uciml/breast-cancer-wisconsin-data). Dự án sử dụng **Metaflow** để quản lý pipeline và **MLflow** để log mô hình, tham số và đánh giá.
 
+## 📑 Mục lục
+
+- [📌 Tính năng nổi bật](#-tính-năng-nổi-bật)
+- [⚙️ Công nghệ sử dụng](#️-công-nghệ-sử-dụng)
+- [🔬 Mô tả các bước trong Pipeline](#-mô-tả-các-bước-trong-pipeline)
+- [🧪 Bộ dữ liệu](#-bộ-dữ-liệu)
+- [📁 Artifact được log vào MLflow](#-artifact-được-log-vào-mlflow)
+- [💡 Điểm mới / Sáng tạo](#-điểm-mới--sáng-tạo)
+- [🔧 Chú ý](#-chú-ý)
+- [Hướng dẫn cài đặt và chạy project bằng WSL + VS Code](#hướng-dẫn-cài-đặt-và-chạy-project-bằng-wsl--vs-code-trên-hệ-điều-hành-windows)
+  - [1. Cài đặt các công cụ cần thiết](#1-cài-đặt-các-công-cụ-cần-thiết)
+  - [2. Cài đặt môi trường phát triển](#2-cài-đặt-môi-trường-phát-triển)
+  - [3. Tải thư mục mã nguồn và tạo môi trường ảo](#3-tải-thư-mục-mã-nguồn-và-tạo-môi-trường-ảo)
+  - [4. Cài đặt các thư viện cần thiết và chạy project](#4-cài-đặt-các-thư-viện-cần-thiết-và-chạy-project)
+  - [✅ Nếu chỉ muốn xem log bằng MLflow](#-nếu-chỉ-muốn-xem-log-bằng-mlflow-không-cần-chạy-lại-pipeline)
+- [🎥 Video demo training pipeline](#-video-demo)
+- [Hướng dẫn cài đặt môi trường và cách chạy code API](#hướng-dẫn-cài-đặt-môi-trường-và-cách-chạy-code)
+  - [1. Yêu cầu chung](#1-yêu-cầu-chung)
+  - [2. Cài đặt và chạy](#2-cài-đặt-và-chạy)
+    - [Trường hợp 1: Dùng image có sẵn từ DockerHub](#-trường-hợp-1-dùng-image-có-sẵn-từ-dockerhub-nhanh-gọn)
+    - [Trường hợp 2: Muốn tự build lại image từ mã nguồn](#-trường-hợp-2-muốn-tự-build-lại-image-từ-mã-nguồn)
+  - [3. Cách chạy trên server được cấp](#3-cách-chạy-trên-server-được-cấp)
+  - [4. Lưu ý](#4-lưu-ý)
+- [🎥 Video demo API](#-video-demo-1)
+
 ---
 
 ## 📌 Tính năng nổi bật
@@ -446,7 +471,5 @@ Nội dung video bao gồm:
 - Khởi động container bằng `docker-compose`
 -  Test API trên [http://localhost:8000/docs] và xác nhận phản hồi thành công
 ---
-
-
 
 

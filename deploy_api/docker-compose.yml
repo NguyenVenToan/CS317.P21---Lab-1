@@ -1,0 +1,11 @@
+version: "3.8"
+
+services:
+  api:
+    build: .
+    image: toannguyenuit/breast_cancer_api:1.0
+    ports:
+      - "8000:8000"
+    volumes:
+      - .:/app  # Mount thư mục hiện tại vào /app trong container
+    command: uvicorn main:app --host 0.0.0.0 --port 8000 --reload

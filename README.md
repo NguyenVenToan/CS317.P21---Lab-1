@@ -48,7 +48,7 @@
 - [🎥 Video demo training pipeline](#-video-demo)
 - [Hướng dẫn cài đặt môi trường và cách chạy code API](#hướng-dẫn-cài-đặt-môi-trường-và-cách-chạy-code)
   - [1. Yêu cầu chung](#1-yêu-cầu-chung)
-  - [2. Cài đặt và chạy](#2-cài-đặt-và-chạy)
+  - [2. Cài đặt và chạy trên máy(local)](#2-cài-đặt-và-chạy)
     - [Trường hợp 1: Dùng image có sẵn từ DockerHub](#-trường-hợp-1-dùng-image-có-sẵn-từ-dockerhub-nhanh-gọn)
     - [Trường hợp 2: Muốn tự build lại image từ mã nguồn](#-trường-hợp-2-muốn-tự-build-lại-image-từ-mã-nguồn)
   - [3. Cách chạy trên server được cấp](#3-cách-chạy-trên-server-được-cấp)
@@ -327,7 +327,7 @@ Nội dung video bao gồm:
 * Docker Compose (phiên bản >= 1.29.x)
 * Tải đầy đủ 5 file trong thư mục deploy_api về máy, bao gồm: Dockerfile, docker-compose.yml, main.py, model_rf.pkl, requirements.txt
 
-### 2. Cài đặt và chạy
+### 2. Cài đặt và chạy trên máy(local)
 
 #### 🔹 Trường hợp 1: **Dùng image có sẵn từ DockerHub** (Nhanh gọn)
 
@@ -451,7 +451,7 @@ http://<IP_SERVER>:8000/docs
 ## 🎥 Video demo
 
 🎬 **Video ngắn demo cách chạy local và trên server:**  
-[👉 Xem tại đây trên YouTube]()
+[👉 Xem tại đây trên YouTube](https://youtu.be/3znsc5hFSr4)
 
 Nội dung video bao gồm:
 

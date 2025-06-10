@@ -657,7 +657,7 @@ Bạn có thể tùy chỉnh và lưu lại visualization theo nhu cầu.
 ## 🎥 Video demo
 
 🎬 Video ngắn demo cách chạy local và trên server:  
-[👉 Xem tại đây trên YouTube]()
+[👉 Xem tại đây trên YouTube](https://youtu.be/lLwDTwuR3FQ)
 
 **Nội dung video bao gồm:**
 

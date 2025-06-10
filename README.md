@@ -471,5 +471,187 @@ Nội dung video bao gồm:
 - Khởi động container bằng `docker-compose`
 -  Test API trên [http://localhost:8000/docs] và xác nhận phản hồi thành công
 ---
+# 📊 Monitoring & Logging Setup Guide
 
+## 📁 Chuẩn bị thư mục
+
+1. **Tải folder** `Monitoring_and_Logging` cùng toàn bộ nội dung bên trong.
+2. Tải file `grafana_dashboard_model.json` và đặt vào cùng thư mục `Monitoring_and_Logging`.
+3. Di chuyển vào thư mục `Monitoring_and_Logging/monitoring` và tạo thư mục `loki-storage` như sau:
+
+```bash
+mkdir -p monitoring/loki-storage/{cache,chunks,compactor,index,wal}
+```
+
+---
+
+## 🖥️ Cài đặt & chạy trên máy local
+
+### 🔹 Trường hợp 1: Dùng image có sẵn từ DockerHub *(Nhanh gọn)*
+
+Không cần build lại image, chỉ cần chạy:
+
+```bash
+docker compose up
+```
+
+📝 *Mặc định `docker-compose.yml` đã sử dụng image có sẵn từ DockerHub:*
+
+```yaml
+image: <your-dockerhub-username>/<your-image-name>
+```
+
+---
+
+### 🔹 Trường hợp 2: Tự build image từ mã nguồn
+
+1. Mở file `docker-compose.yml`
+2. Tìm dòng:
+
+```yaml
+image: <your-dockerhub-username>/<your-image-name>
+```
+
+3. **Xóa dòng này** hoặc thay bằng tên image tùy chọn, ví dụ:
+
+```yaml
+image: my-fastapi-app:latest
+```
+
+4. Chạy lệnh sau để build và khởi động:
+
+```bash
+docker compose up --build
+```
+
+⚠️ *Nếu không chỉnh sửa `image:` thì Docker sẽ tiếp tục dùng image từ DockerHub.*
+
+---
+
+### 🔍 Kiểm tra API
+
+Mở trình duyệt truy cập:  
+👉 [http://localhost:5050/docs](http://localhost:5050/docs)
+
+🛑 Để dừng ứng dụng:  
+Nhấn `Ctrl + C` trong terminal
+
+---
+
+## 🌐 Cách cài đặt trên server từ xa
+
+1. SSH vào server:
+
+```bash
+ssh mlops@<ip_server>
+```
+
+2. Trên máy cá nhân, dùng `scp` để upload toàn bộ thư mục:
+
+```bash
+scp -r "C:\Users\toann\OneDrive\Documents\MLops" mlops@192.168.28.35:/home/mlops/
+```
+
+3. Trên server:
+
+```bash
+cd /home/mlops/Monitoring_and_Logging
+```
+
+4. Cấp quyền cho thư mục `loki-storage`:
+
+```bash
+sudo chmod 755 ./monitoring/loki-storage
+sudo chmod -R o+rx ./monitoring/loki-storage
+```
+
+🔁 *Hoặc (không khuyến nghị do kém an toàn):*
+
+```bash
+sudo chmod -R 777 ./monitoring/loki-storage
+```
+
+5. Build và chạy dịch vụ:
+
+```bash
+docker compose up --build -d
+```
+
+6. Truy cập API:
+
+👉 [http://<ip_server>:5050/docs](http://<ip_server>:5050/docs)
+
+---
+
+## 📈 Truy cập Grafana để xem Monitoring & Logging
+
+1. Mở trình duyệt:
+   - Local: [http://localhost:3000](http://localhost:3000)
+   - Server: [http://<ip_server>:3000](http://<ip_server>:3000)
+
+2. Đăng nhập:
+   - **Username:** `admin`
+   - **Password:** `admin` (sẽ yêu cầu đổi mật khẩu sau lần đăng nhập đầu tiên)
+
+---
+
+## ⚙️ Cấu hình Grafana
+
+1. **Thêm Data Source**
+   - Vào `Connections` → `Data Sources` → `Add data source`
+   - **Chọn Prometheus:**
+     - Name: `prometheus`
+     - URL: `http://prometheus:9090`
+     - Save & Test
+   - **Chọn Loki:**
+     - Name: `loki`
+     - URL: `http://loki:3000`
+     - Save & Test
+
+---
+
+2. **Thêm Dashboards**
+
+🔹 **Dashboard 1 - Tài nguyên hệ thống:**
+
+- Vào `Dashboards` → `New` → `Import`
+- Nhập ID: `1860` → Load → Load
+
+📊 *Hiển thị: CPU usage, RAM usage, Disk space, disk IO, Network IO (Tx/Rx)*
+
+🔹 **Dashboard 2 - Ứng dụng ML:**
+
+- Vào `Dashboards` → `New` → `Import`
+- Upload file: `grafana_dashboard_model.json` → Load
+
+📊 *Hiển thị: Request per second, Error rate, Latency, Inference speed, Confidence score*
+
+---
+
+## 📜 Xem log với Loki
+
+1. Vào một dashboard → `Add visualization`
+2. Chọn **Data source:** `loki`
+3. Phần `Queries` nhập một trong các dòng sau để lọc log:
+
+```
+# 1. App logs
+{job="app_logfile"}
+
+# 2. Docker stdout/stderr
+{job="docker_stdout"}
+
+# 3. Chỉ stdout
+{job="docker_stdout", stream="stdout"}
+
+# 4. Chỉ stderr
+{job="docker_stdout", stream="stderr"}
+
+# 5. Syslog
+{job="syslog"}
+```
+
+Bạn có thể tùy chỉnh và lưu lại visualization theo nhu cầu.
+
+---
 

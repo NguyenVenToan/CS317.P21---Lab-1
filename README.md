@@ -538,7 +538,7 @@ Nhấn `Ctrl + C` trong terminal
 
 ---
 
-## 🌐 Cách cài đặt trên server từ xa
+## 🌐 Cách cài đặt trên server
 
 1. SSH vào server:
 
@@ -656,7 +656,7 @@ Bạn có thể tùy chỉnh và lưu lại visualization theo nhu cầu.
 ---
 ## 🎥 Video demo
 
-🎬 Video ngắn demo cách chạy local và trên server:  
+🎬 Video ngắn demo cách chạy trên server:  
 [👉 Xem tại đây trên YouTube](https://youtu.be/lLwDTwuR3FQ)
 
 **Nội dung video bao gồm:**

@@ -654,4 +654,16 @@ docker compose up --build -d
 Bạn có thể tùy chỉnh và lưu lại visualization theo nhu cầu.
 
 ---
+## 🎥 Video demo
 
+🎬 Video ngắn demo cách chạy local và trên server:  
+[👉 Xem tại đây trên YouTube]()
+
+**Nội dung video bao gồm:**
+
+### 📡 Trên server:
+- Build image
+- Dashboard đã xây dựng, bao gồm các thông số trong phần yêu cầu
+- Chạy script giả lập traffic request vào API, sau đó dashboard thay đổi
+- Logging capture log từ API, system log
+- Giả lập trường hợp API lỗi, show error log capture được và error rate trong dashboard có thay đổi

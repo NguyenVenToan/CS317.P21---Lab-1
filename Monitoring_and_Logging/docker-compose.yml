@@ -1,0 +1,77 @@
+services:
+  app:
+    build: .
+    image: toannguyenuit/breast-cancer-api:latest
+    ports:
+      - "5050:5000"
+    restart: always
+    volumes:
+      - app_logs:/app/logs  # Mount thư mục logs riêng
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"
+
+  prometheus:
+    image: prom/prometheus
+    ports:
+      - "9090:9090"
+    volumes:
+      - ./monitoring/prometheus.yml:/etc/prometheus/prometheus.yml
+      - ./monitoring/alerts.yml:/etc/prometheus/alerts.yml
+    command:
+      - '--config.file=/etc/prometheus/prometheus.yml'
+    restart: always
+
+  grafana:
+    image: grafana/grafana
+    ports:
+      - "3000:3000"
+    volumes:
+      - grafana-storage:/var/lib/grafana
+    restart: always
+
+  node-exporter:
+    image: prom/node-exporter
+    ports:
+      - "9100:9100"
+    restart: always
+
+  alertmanager:
+    image: prom/alertmanager
+    ports:
+      - "9093:9093"
+    volumes:
+      - ./monitoring/alertmanager.yml:/etc/alertmanager/alertmanager.yml
+    restart: always
+
+  loki:
+    image: grafana/loki:2.8.2
+    ports:
+      - "3100:3100"
+    volumes:
+      - ./monitoring/loki-config.yaml:/etc/loki/local-config.yaml
+      - ./monitoring/loki-storage:/loki
+    command: -config.file=/etc/loki/local-config.yaml
+    restart: always
+
+  promtail:
+    image: grafana/promtail:2.8.2
+    volumes:
+      - ./monitoring/promtail-config.yaml:/etc/promtail/promtail-config.yaml
+      - app_logs:/app/logs:ro        # Mount cùng volume với app
+      - promtail_positions:/tmp      # Persistent positions
+      - /var/log:/var/log:ro         # để đọc syslog
+      - /var/lib/docker/containers:/var/lib/docker/containers:ro
+      - /var/run/docker.sock:/var/run/docker.sock:ro  # Để lấy container metadata
+    command: -config.file=/etc/promtail/promtail-config.yaml
+    restart: always
+    depends_on:
+      - loki
+    user: root  # Cần quyền root để đọc docker logs và syslog
+
+volumes:
+  grafana-storage:
+  app_logs:           # Volume để share logs giữa app và promtail
+  promtail_positions: # Volume để lưu positions file

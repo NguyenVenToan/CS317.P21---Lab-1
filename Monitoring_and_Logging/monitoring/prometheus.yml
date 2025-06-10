@@ -1,0 +1,26 @@
+global:
+  scrape_interval: 15s
+  evaluation_interval: 15s
+
+scrape_configs:
+  - job_name: "app"
+    static_configs:
+      - targets: ["app:5000"]
+
+  - job_name: "node_exporter"
+    static_configs:
+      - targets: ["node-exporter:9100"]
+
+  - job_name: "alertmanager"
+    static_configs:
+      - targets: ["alertmanager:9093"]
+
+# Phần mới thêm vào:
+alerting:
+  alertmanagers:
+    - static_configs:
+        - targets:
+          - "alertmanager:9093"    # Địa chỉ Alertmanager
+
+rule_files:
+  - "alerts.yml"   # File alert rules bạn tạo (đặt chung thư mục với prometheus.yml)

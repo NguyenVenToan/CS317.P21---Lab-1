@@ -1,0 +1,545 @@
+2025-06-04 09:53:43,928 [WARNING] Expected 30 features, but got 1
+2025-06-04 09:53:43,936 [ERROR] Prediction error
+Traceback (most recent call last):
+  File "/app/app.py", line 74, in predict
+    raise HTTPException(status_code=400, detail=msg)
+fastapi.exceptions.HTTPException: 400: Expected 30 features, but got 1
+2025-06-04 09:53:45,666 [WARNING] Expected 30 features, but got 1
+2025-06-04 09:53:45,668 [ERROR] Prediction error
+Traceback (most recent call last):
+  File "/app/app.py", line 74, in predict
+    raise HTTPException(status_code=400, detail=msg)
+fastapi.exceptions.HTTPException: 400: Expected 30 features, but got 1
+2025-06-04 09:53:46,144 [WARNING] Expected 30 features, but got 1
+2025-06-04 09:53:46,147 [ERROR] Prediction error
+Traceback (most recent call last):
+  File "/app/app.py", line 74, in predict
+    raise HTTPException(status_code=400, detail=msg)
+fastapi.exceptions.HTTPException: 400: Expected 30 features, but got 1
+2025-06-04 12:56:41,456 [INFO] Prediction done. Output=1, Confidence=0.80, Time=0.0109s
+2025-06-04 13:07:12,073 [ERROR] HTTPException: status_code=500, detail=Internal Server Error for testing
+2025-06-04 13:07:13,083 [ERROR] HTTPException: status_code=500, detail=Internal Server Error for testing
+2025-06-04 13:07:13,443 [ERROR] HTTPException: status_code=500, detail=Internal Server Error for testing
+2025-06-04 13:38:41,071 [ERROR] HTTPException: status_code=500, detail=Internal Server Error for testing
+2025-06-04 13:38:41,113 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.0648s
+2025-06-04 13:38:41,158 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.0949s
+2025-06-04 13:38:41,163 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.0922s
+2025-06-04 13:38:41,169 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1060s
+2025-06-04 13:38:41,186 [ERROR] HTTPException: status_code=500, detail=Internal Server Error for testing
+2025-06-04 13:38:41,203 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.0202s
+2025-06-04 13:38:42,263 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.0153s
+2025-06-04 13:38:42,283 [ERROR] HTTPException: status_code=500, detail=Internal Server Error for testing
+2025-06-04 13:38:42,346 [ERROR] HTTPException: status_code=500, detail=Internal Server Error for testing
+2025-06-04 13:38:42,388 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1242s
+2025-06-04 13:38:42,403 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1292s
+2025-06-04 13:38:42,408 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1351s
+2025-06-04 13:38:42,410 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1372s
+2025-06-04 13:38:43,517 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.0650s
+2025-06-04 13:38:43,542 [ERROR] HTTPException: status_code=500, detail=Internal Server Error for testing
+2025-06-04 13:38:43,549 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.0953s
+2025-06-04 13:38:43,619 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1581s
+2025-06-04 13:38:43,633 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1136s
+2025-06-04 13:38:43,636 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1150s
+2025-06-04 13:38:43,637 [ERROR] HTTPException: status_code=500, detail=Internal Server Error for testing
+2025-06-04 13:38:44,691 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.0065s
+2025-06-04 13:38:44,739 [ERROR] HTTPException: status_code=500, detail=Internal Server Error for testing
+2025-06-04 13:38:44,792 [ERROR] HTTPException: status_code=500, detail=Internal Server Error for testing
+2025-06-04 13:38:44,821 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1207s
+2025-06-04 13:38:44,853 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1416s
+2025-06-04 13:38:44,856 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1589s
+2025-06-04 13:38:44,859 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1296s
+2025-06-04 13:38:45,913 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.0143s
+2025-06-04 13:38:45,923 [ERROR] HTTPException: status_code=500, detail=Internal Server Error for testing
+2025-06-04 13:38:45,993 [ERROR] HTTPException: status_code=500, detail=Internal Server Error for testing
+2025-06-04 13:38:46,038 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1164s
+2025-06-04 13:38:46,051 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1328s
+2025-06-04 13:38:46,055 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1362s
+2025-06-04 13:38:46,058 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1379s
+2025-06-04 13:38:47,151 [ERROR] HTTPException: status_code=500, detail=Internal Server Error for testing
+2025-06-04 13:38:47,175 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.0735s
+2025-06-04 13:38:47,214 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1041s
+2025-06-04 13:38:47,275 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1219s
+2025-06-04 13:38:47,275 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1598s
+2025-06-04 13:38:47,279 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1288s
+2025-06-04 13:38:47,282 [ERROR] HTTPException: status_code=500, detail=Internal Server Error for testing
+2025-06-04 13:38:48,420 [ERROR] HTTPException: status_code=500, detail=Internal Server Error for testing
+2025-06-04 13:38:48,431 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.0996s
+2025-06-04 13:38:48,448 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1127s
+2025-06-04 13:38:48,461 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1280s
+2025-06-04 13:38:48,482 [ERROR] HTTPException: status_code=500, detail=Internal Server Error for testing
+2025-06-04 13:38:48,497 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.0982s
+2025-06-04 13:38:48,502 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1033s
+2025-06-04 13:38:49,562 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.0157s
+2025-06-04 13:38:49,570 [ERROR] HTTPException: status_code=500, detail=Internal Server Error for testing
+2025-06-04 13:38:49,654 [ERROR] HTTPException: status_code=500, detail=Internal Server Error for testing
+2025-06-04 13:38:49,727 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1562s
+2025-06-04 13:38:49,727 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1573s
+2025-06-04 13:38:49,730 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1604s
+2025-06-04 13:38:49,732 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1632s
+2025-06-04 13:38:50,825 [ERROR] HTTPException: status_code=500, detail=Internal Server Error for testing
+2025-06-04 13:38:50,903 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1125s
+2025-06-04 13:38:50,906 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1122s
+2025-06-04 13:38:50,922 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1111s
+2025-06-04 13:38:50,925 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1042s
+2025-06-04 13:38:50,926 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1344s
+2025-06-04 13:38:50,930 [ERROR] HTTPException: status_code=500, detail=Internal Server Error for testing
+2025-06-04 13:38:52,049 [ERROR] HTTPException: status_code=500, detail=Internal Server Error for testing
+2025-06-04 13:38:52,130 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1230s
+2025-06-04 13:38:52,131 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1255s
+2025-06-04 13:38:52,133 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1328s
+2025-06-04 13:38:52,173 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1253s
+2025-06-04 13:38:52,174 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1194s
+2025-06-04 13:38:52,176 [ERROR] HTTPException: status_code=500, detail=Internal Server Error for testing
+2025-06-04 13:38:53,272 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.0144s
+2025-06-04 13:38:53,282 [ERROR] HTTPException: status_code=500, detail=Internal Server Error for testing
+2025-06-04 13:38:53,383 [ERROR] HTTPException: status_code=500, detail=Internal Server Error for testing
+2025-06-04 13:38:53,410 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1300s
+2025-06-04 13:38:53,415 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1423s
+2025-06-04 13:38:53,417 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1371s
+2025-06-04 13:38:53,421 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1464s
+2025-06-04 13:38:54,530 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.0140s
+2025-06-04 13:38:54,560 [ERROR] HTTPException: status_code=500, detail=Internal Server Error for testing
+2025-06-04 13:38:54,631 [ERROR] HTTPException: status_code=500, detail=Internal Server Error for testing
+2025-06-04 13:38:54,670 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1325s
+2025-06-04 13:38:54,681 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1386s
+2025-06-04 13:38:54,682 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1444s
+2025-06-04 13:38:54,683 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1513s
+2025-06-04 13:38:55,783 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.0182s
+2025-06-04 13:38:55,791 [ERROR] HTTPException: status_code=500, detail=Internal Server Error for testing
+2025-06-04 13:38:55,869 [ERROR] HTTPException: status_code=500, detail=Internal Server Error for testing
+2025-06-04 13:38:55,925 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1353s
+2025-06-04 13:38:55,934 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1413s
+2025-06-04 13:38:55,944 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1520s
+2025-06-04 13:38:55,945 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1555s
+2025-06-04 13:38:57,022 [ERROR] HTTPException: status_code=500, detail=Internal Server Error for testing
+2025-06-04 13:38:57,139 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1273s
+2025-06-04 13:38:57,151 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1390s
+2025-06-04 13:38:57,155 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1530s
+2025-06-04 13:38:57,163 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1449s
+2025-06-04 13:38:57,167 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1646s
+2025-06-04 13:38:57,169 [ERROR] HTTPException: status_code=500, detail=Internal Server Error for testing
+2025-06-04 13:38:58,226 [ERROR] HTTPException: status_code=500, detail=Internal Server Error for testing
+2025-06-04 13:38:58,326 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1284s
+2025-06-04 13:38:58,341 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1312s
+2025-06-04 13:38:58,355 [INFO] Prediction done. Output=1, Confidence=0.80, Time=0.1580s
+2025-06-04 13:38:58,359 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1466s
+2025-06-04 13:38:58,361 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1511s
+2025-06-04 13:38:58,366 [ERROR] HTTPException: status_code=500, detail=Internal Server Error for testing
+2025-06-04 13:38:59,420 [ERROR] HTTPException: status_code=500, detail=Internal Server Error for testing
+2025-06-04 13:38:59,573 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1531s
+2025-06-04 13:38:59,575 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1533s
+2025-06-04 13:38:59,578 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1739s
+2025-06-04 13:38:59,583 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1791s
+2025-06-04 13:38:59,586 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1626s
+2025-06-04 13:38:59,591 [ERROR] HTTPException: status_code=500, detail=Internal Server Error for testing
+2025-06-04 13:39:00,658 [ERROR] HTTPException: status_code=500, detail=Internal Server Error for testing
+2025-06-04 13:39:00,792 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1354s
+2025-06-04 13:39:00,811 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1661s
+2025-06-04 13:39:00,815 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1700s
+2025-06-04 13:39:00,820 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1623s
+2025-06-04 13:39:00,821 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1621s
+2025-06-04 13:39:00,824 [ERROR] HTTPException: status_code=500, detail=Internal Server Error for testing
+2025-06-04 13:39:01,878 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.0134s
+2025-06-04 13:39:01,888 [ERROR] HTTPException: status_code=500, detail=Internal Server Error for testing
+2025-06-04 13:39:01,979 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.0932s
+2025-06-04 13:39:01,988 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1070s
+2025-06-04 13:39:02,000 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1166s
+2025-06-04 13:39:02,008 [ERROR] HTTPException: status_code=500, detail=Internal Server Error for testing
+2025-06-04 13:39:02,011 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1242s
+2025-06-04 13:39:03,067 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.0166s
+2025-06-04 13:39:03,074 [ERROR] HTTPException: status_code=500, detail=Internal Server Error for testing
+2025-06-04 13:39:03,151 [ERROR] HTTPException: status_code=500, detail=Internal Server Error for testing
+2025-06-04 13:39:03,198 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1249s
+2025-06-04 13:39:03,212 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1386s
+2025-06-04 13:39:03,217 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1453s
+2025-06-04 13:39:03,218 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1427s
+2025-06-04 13:39:04,276 [ERROR] HTTPException: status_code=500, detail=Internal Server Error for testing
+2025-06-04 13:39:04,407 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1464s
+2025-06-04 13:39:04,427 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1583s
+2025-06-04 13:39:04,429 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1610s
+2025-06-04 13:39:04,429 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1694s
+2025-06-04 13:39:04,433 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1557s
+2025-06-04 13:39:04,437 [ERROR] HTTPException: status_code=500, detail=Internal Server Error for testing
+2025-06-04 13:39:05,496 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.0208s
+2025-06-04 13:39:05,534 [ERROR] HTTPException: status_code=500, detail=Internal Server Error for testing
+2025-06-04 13:39:05,659 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1511s
+2025-06-04 13:39:05,662 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1580s
+2025-06-04 13:39:05,668 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1680s
+2025-06-04 13:39:05,670 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1625s
+2025-06-04 13:39:05,672 [ERROR] HTTPException: status_code=500, detail=Internal Server Error for testing
+2025-06-04 13:39:06,749 [ERROR] HTTPException: status_code=500, detail=Internal Server Error for testing
+2025-06-04 13:39:06,855 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1365s
+2025-06-04 13:39:06,859 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1143s
+2025-06-04 13:39:06,889 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1617s
+2025-06-04 13:39:06,891 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1454s
+2025-06-04 13:39:06,892 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1749s
+2025-06-04 13:39:06,895 [ERROR] HTTPException: status_code=500, detail=Internal Server Error for testing
+2025-06-04 13:39:07,956 [ERROR] HTTPException: status_code=500, detail=Internal Server Error for testing
+2025-06-04 13:39:08,044 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1117s
+2025-06-04 13:39:08,035 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.0870s
+2025-06-04 13:39:08,038 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.0870s
+2025-06-04 13:39:08,041 [ERROR] HTTPException: status_code=500, detail=Internal Server Error for testing
+2025-06-04 13:39:08,047 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1124s
+2025-06-04 13:39:08,048 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1011s
+2025-06-04 13:39:08,571 [ERROR] HTTPException: status_code=500, detail=Internal Server Error for testing
+2025-06-04 13:39:08,686 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1467s
+2025-06-04 13:39:08,696 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1408s
+2025-06-04 13:39:08,707 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1531s
+2025-06-04 13:39:08,713 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1697s
+2025-06-04 13:39:08,713 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1764s
+2025-06-04 13:39:08,715 [ERROR] HTTPException: status_code=500, detail=Internal Server Error for testing
+2025-06-04 13:39:09,784 [ERROR] HTTPException: status_code=500, detail=Internal Server Error for testing
+2025-06-04 13:39:09,876 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1076s
+2025-06-04 13:39:09,881 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1207s
+2025-06-04 13:39:09,882 [INFO] Prediction done. Output=1, Confidence=0.80, Time=0.1217s
+2025-06-04 13:39:09,884 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1033s
+2025-06-04 13:39:09,888 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1079s
+2025-06-04 13:39:09,892 [ERROR] HTTPException: status_code=500, detail=Internal Server Error for testing
+2025-06-04 13:39:10,954 [ERROR] HTTPException: status_code=500, detail=Internal Server Error for testing
+2025-06-04 13:39:11,035 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1125s
+2025-06-04 13:39:11,054 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1296s
+2025-06-04 13:39:11,054 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1340s
+2025-06-04 13:39:11,064 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1432s
+2025-06-04 13:39:11,067 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1440s
+2025-06-04 13:39:11,070 [ERROR] HTTPException: status_code=500, detail=Internal Server Error for testing
+2025-06-04 13:39:12,155 [ERROR] HTTPException: status_code=500, detail=Internal Server Error for testing
+2025-06-04 13:39:12,231 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1226s
+2025-06-04 13:39:12,242 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1396s
+2025-06-04 13:39:12,260 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1417s
+2025-06-04 13:39:12,264 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1626s
+2025-06-04 13:39:12,265 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1461s
+2025-06-04 13:39:12,267 [ERROR] HTTPException: status_code=500, detail=Internal Server Error for testing
+2025-06-04 13:39:13,314 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.0164s
+2025-06-04 13:39:13,333 [ERROR] HTTPException: status_code=500, detail=Internal Server Error for testing
+2025-06-04 13:39:13,387 [ERROR] HTTPException: status_code=500, detail=Internal Server Error for testing
+2025-06-04 13:39:13,440 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1247s
+2025-06-04 13:39:13,444 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1283s
+2025-06-04 13:39:13,451 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1201s
+2025-06-04 13:39:13,457 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1248s
+2025-06-04 13:39:14,499 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.0076s
+2025-06-04 13:39:14,587 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.0737s
+2025-06-04 13:39:14,596 [ERROR] HTTPException: status_code=500, detail=Internal Server Error for testing
+2025-06-04 13:39:14,599 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.0850s
+2025-06-04 13:39:14,611 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1027s
+2025-06-04 13:39:14,626 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.0352s
+2025-06-04 13:39:14,632 [ERROR] HTTPException: status_code=500, detail=Internal Server Error for testing
+2025-06-04 13:39:15,704 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.0157s
+2025-06-04 13:39:15,713 [ERROR] HTTPException: status_code=500, detail=Internal Server Error for testing
+2025-06-04 13:39:15,783 [ERROR] HTTPException: status_code=500, detail=Internal Server Error for testing
+2025-06-04 13:39:15,853 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1400s
+2025-06-04 13:39:15,854 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1423s
+2025-06-04 13:39:15,858 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1478s
+2025-06-04 13:39:15,866 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1564s
+2025-06-04 13:39:16,985 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.0160s
+2025-06-04 13:39:17,007 [ERROR] HTTPException: status_code=500, detail=Internal Server Error for testing
+2025-06-04 13:39:17,084 [ERROR] HTTPException: status_code=500, detail=Internal Server Error for testing
+2025-06-04 13:39:17,133 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1446s
+2025-06-04 13:39:17,137 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1426s
+2025-06-04 13:39:17,143 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1480s
+2025-06-04 13:39:17,145 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1489s
+2025-06-04 13:39:18,292 [ERROR] HTTPException: status_code=500, detail=Internal Server Error for testing
+2025-06-04 13:39:18,385 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1033s
+2025-06-04 13:39:18,386 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1321s
+2025-06-04 13:39:18,395 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1115s
+2025-06-04 13:39:18,402 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1486s
+2025-06-04 13:39:18,402 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1430s
+2025-06-04 13:39:18,404 [ERROR] HTTPException: status_code=500, detail=Internal Server Error for testing
+2025-06-04 13:39:19,563 [ERROR] HTTPException: status_code=500, detail=Internal Server Error for testing
+2025-06-04 13:39:19,593 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.0766s
+2025-06-04 13:39:19,650 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1346s
+2025-06-04 13:39:19,668 [ERROR] HTTPException: status_code=500, detail=Internal Server Error for testing
+2025-06-04 13:39:19,676 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1623s
+2025-06-04 13:39:19,683 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1199s
+2025-06-04 13:39:19,687 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1225s
+2025-06-04 13:39:20,866 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.0645s
+2025-06-04 13:39:20,880 [ERROR] HTTPException: status_code=500, detail=Internal Server Error for testing
+2025-06-04 13:39:20,889 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.0861s
+2025-06-04 13:39:20,899 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.0968s
+2025-06-04 13:39:20,934 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.0545s
+2025-06-04 13:39:20,940 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.0606s
+2025-06-04 13:39:20,944 [ERROR] HTTPException: status_code=500, detail=Internal Server Error for testing
+2025-06-04 13:39:21,980 [ERROR] HTTPException: status_code=500, detail=Internal Server Error for testing
+2025-06-04 13:39:22,085 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1085s
+2025-06-04 13:39:22,088 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1093s
+2025-06-04 13:39:22,093 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1279s
+2025-06-04 13:39:22,098 [INFO] Prediction done. Output=1, Confidence=0.80, Time=0.1214s
+2025-06-04 13:39:22,098 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1327s
+2025-06-04 13:39:22,101 [ERROR] HTTPException: status_code=500, detail=Internal Server Error for testing
+2025-06-04 13:39:23,146 [ERROR] HTTPException: status_code=500, detail=Internal Server Error for testing
+2025-06-04 13:39:23,239 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1040s
+2025-06-04 13:39:23,242 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1084s
+2025-06-04 13:39:23,253 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1087s
+2025-06-04 13:39:23,259 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1107s
+2025-06-04 13:39:23,261 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1143s
+2025-06-04 13:39:23,265 [ERROR] HTTPException: status_code=500, detail=Internal Server Error for testing
+2025-06-04 13:39:24,317 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.0159s
+2025-06-04 13:39:24,326 [ERROR] HTTPException: status_code=500, detail=Internal Server Error for testing
+2025-06-04 13:39:24,413 [ERROR] HTTPException: status_code=500, detail=Internal Server Error for testing
+2025-06-04 13:39:24,449 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1252s
+2025-06-04 13:39:24,457 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1333s
+2025-06-04 13:39:24,462 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1397s
+2025-06-04 13:39:24,464 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1416s
+2025-06-04 13:39:25,563 [ERROR] HTTPException: status_code=500, detail=Internal Server Error for testing
+2025-06-04 13:39:25,614 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1057s
+2025-06-04 13:39:25,631 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1226s
+2025-06-04 13:39:25,660 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1257s
+2025-06-04 13:39:25,661 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1258s
+2025-06-04 13:39:25,667 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1301s
+2025-06-04 13:39:25,668 [ERROR] HTTPException: status_code=500, detail=Internal Server Error for testing
+2025-06-04 13:39:26,732 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.0167s
+2025-06-04 13:39:26,741 [ERROR] HTTPException: status_code=500, detail=Internal Server Error for testing
+2025-06-04 13:39:26,819 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.0862s
+2025-06-04 13:39:26,830 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.0902s
+2025-06-04 13:39:26,859 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1196s
+2025-06-04 13:39:26,866 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1253s
+2025-06-04 13:39:26,867 [ERROR] HTTPException: status_code=500, detail=Internal Server Error for testing
+2025-06-04 13:39:27,931 [ERROR] HTTPException: status_code=500, detail=Internal Server Error for testing
+2025-06-04 13:39:28,020 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1019s
+2025-06-04 13:39:28,046 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1359s
+2025-06-04 13:39:28,055 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1335s
+2025-06-04 13:39:28,058 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1405s
+2025-06-04 13:39:28,060 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1476s
+2025-06-04 13:39:28,063 [ERROR] HTTPException: status_code=500, detail=Internal Server Error for testing
+2025-06-04 13:39:29,120 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.0157s
+2025-06-04 13:39:29,126 [ERROR] HTTPException: status_code=500, detail=Internal Server Error for testing
+2025-06-04 13:39:29,184 [ERROR] HTTPException: status_code=500, detail=Internal Server Error for testing
+2025-06-04 13:39:29,250 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1244s
+2025-06-04 13:39:29,257 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1293s
+2025-06-04 13:39:29,258 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1330s
+2025-06-04 13:39:29,260 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1341s
+2025-06-04 13:39:30,312 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.0147s
+2025-06-04 13:39:30,324 [ERROR] HTTPException: status_code=500, detail=Internal Server Error for testing
+2025-06-04 13:39:30,403 [ERROR] HTTPException: status_code=500, detail=Internal Server Error for testing
+2025-06-04 13:39:30,440 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1205s
+2025-06-04 13:39:30,449 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1333s
+2025-06-04 13:39:30,457 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1417s
+2025-06-04 13:39:30,466 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1465s
+2025-06-04 13:39:31,526 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.0144s
+2025-06-04 13:39:31,535 [ERROR] HTTPException: status_code=500, detail=Internal Server Error for testing
+2025-06-04 13:39:31,590 [ERROR] HTTPException: status_code=500, detail=Internal Server Error for testing
+2025-06-04 13:39:31,648 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1172s
+2025-06-04 13:39:31,651 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1196s
+2025-06-04 13:39:31,653 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1230s
+2025-06-04 13:39:31,654 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1226s
+2025-06-04 13:39:32,697 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.0156s
+2025-06-04 13:39:32,712 [ERROR] HTTPException: status_code=500, detail=Internal Server Error for testing
+2025-06-04 13:39:32,760 [ERROR] HTTPException: status_code=500, detail=Internal Server Error for testing
+2025-06-04 13:39:32,821 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1200s
+2025-06-04 13:39:32,834 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1289s
+2025-06-04 13:39:32,835 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1340s
+2025-06-04 13:39:32,838 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1320s
+2025-06-04 13:39:33,950 [ERROR] HTTPException: status_code=500, detail=Internal Server Error for testing
+2025-06-04 13:39:33,957 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.0840s
+2025-06-04 13:39:33,970 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1017s
+2025-06-04 13:39:33,976 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1092s
+2025-06-04 13:39:34,021 [ERROR] HTTPException: status_code=500, detail=Internal Server Error for testing
+2025-06-04 13:39:34,030 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.0858s
+2025-06-04 13:39:34,035 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.0914s
+2025-06-04 13:39:35,084 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.0150s
+2025-06-04 13:39:35,129 [ERROR] HTTPException: status_code=500, detail=Internal Server Error for testing
+2025-06-04 13:39:35,170 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.0855s
+2025-06-04 13:39:35,194 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1091s
+2025-06-04 13:39:35,208 [ERROR] HTTPException: status_code=500, detail=Internal Server Error for testing
+2025-06-04 13:39:35,216 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1038s
+2025-06-04 13:39:35,218 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1043s
+2025-06-04 13:39:36,274 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.0214s
+2025-06-04 13:39:36,287 [ERROR] HTTPException: status_code=500, detail=Internal Server Error for testing
+2025-06-04 13:39:36,369 [ERROR] HTTPException: status_code=500, detail=Internal Server Error for testing
+2025-06-04 13:39:36,403 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1239s
+2025-06-04 13:39:36,416 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1368s
+2025-06-04 13:39:36,420 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1376s
+2025-06-04 13:39:36,421 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1406s
+2025-06-04 13:39:37,389 [ERROR] HTTPException: status_code=500, detail=Internal Server Error for testing
+2025-06-04 13:39:37,460 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1103s
+2025-06-04 13:39:37,468 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1137s
+2025-06-04 13:39:37,474 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1133s
+2025-06-04 13:39:37,482 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1324s
+2025-06-04 13:39:37,486 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1238s
+2025-06-04 13:39:37,489 [ERROR] HTTPException: status_code=500, detail=Internal Server Error for testing
+2025-06-04 13:39:38,138 [ERROR] HTTPException: status_code=500, detail=Internal Server Error for testing
+2025-06-04 13:39:38,253 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.2633s
+2025-06-04 13:39:38,274 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.2616s
+2025-06-04 13:39:38,287 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.2962s
+2025-06-04 13:39:38,288 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.2761s
+2025-06-04 13:39:38,291 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1842s
+2025-06-04 13:39:38,293 [ERROR] HTTPException: status_code=500, detail=Internal Server Error for testing
+2025-06-04 13:39:39,360 [ERROR] HTTPException: status_code=500, detail=Internal Server Error for testing
+2025-06-04 13:39:39,447 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1092s
+2025-06-04 13:39:39,448 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.0974s
+2025-06-04 13:39:39,455 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1035s
+2025-06-04 13:39:39,460 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1061s
+2025-06-04 13:39:39,463 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1247s
+2025-06-04 13:39:39,465 [ERROR] HTTPException: status_code=500, detail=Internal Server Error for testing
+2025-06-04 13:39:40,529 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.0139s
+2025-06-04 13:39:40,535 [ERROR] HTTPException: status_code=500, detail=Internal Server Error for testing
+2025-06-04 13:39:40,590 [ERROR] HTTPException: status_code=500, detail=Internal Server Error for testing
+2025-06-04 13:39:40,653 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1203s
+2025-06-04 13:39:40,659 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1237s
+2025-06-04 13:39:40,659 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1261s
+2025-06-04 13:39:40,663 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1281s
+2025-06-04 13:39:41,730 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.0149s
+2025-06-04 13:39:41,740 [ERROR] HTTPException: status_code=500, detail=Internal Server Error for testing
+2025-06-04 13:39:41,816 [ERROR] HTTPException: status_code=500, detail=Internal Server Error for testing
+2025-06-04 13:39:41,861 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1192s
+2025-06-04 13:39:41,865 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1267s
+2025-06-04 13:39:41,868 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1347s
+2025-06-04 13:39:41,870 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1331s
+2025-06-04 13:39:42,951 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.0166s
+2025-06-04 13:39:42,959 [ERROR] HTTPException: status_code=500, detail=Internal Server Error for testing
+2025-06-04 13:39:43,009 [ERROR] HTTPException: status_code=500, detail=Internal Server Error for testing
+2025-06-04 13:39:43,060 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1040s
+2025-06-04 13:39:43,068 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1082s
+2025-06-04 13:39:43,077 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1189s
+2025-06-04 13:39:43,077 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1216s
+2025-06-04 13:39:44,149 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.0169s
+2025-06-04 13:39:44,163 [ERROR] HTTPException: status_code=500, detail=Internal Server Error for testing
+2025-06-04 13:39:44,248 [ERROR] HTTPException: status_code=500, detail=Internal Server Error for testing
+2025-06-04 13:39:44,271 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1207s
+2025-06-04 13:39:44,280 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1231s
+2025-06-04 13:39:44,287 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1290s
+2025-06-04 13:39:44,290 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1327s
+2025-06-04 13:39:45,368 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.0189s
+2025-06-04 13:39:45,386 [ERROR] HTTPException: status_code=500, detail=Internal Server Error for testing
+2025-06-04 13:39:45,475 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1059s
+2025-06-04 13:39:45,496 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1189s
+2025-06-04 13:39:45,499 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1215s
+2025-06-04 13:39:45,506 [ERROR] HTTPException: status_code=500, detail=Internal Server Error for testing
+2025-06-04 13:39:45,509 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1307s
+2025-06-04 13:39:46,549 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.0149s
+2025-06-04 13:39:46,559 [ERROR] HTTPException: status_code=500, detail=Internal Server Error for testing
+2025-06-04 13:39:46,661 [ERROR] HTTPException: status_code=500, detail=Internal Server Error for testing
+2025-06-04 13:39:46,686 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1312s
+2025-06-04 13:39:46,696 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1392s
+2025-06-04 13:39:46,697 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1415s
+2025-06-04 13:39:46,699 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1444s
+2025-06-04 13:39:47,747 [ERROR] HTTPException: status_code=500, detail=Internal Server Error for testing
+2025-06-04 13:39:47,839 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.0929s
+2025-06-04 13:39:47,842 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1094s
+2025-06-04 13:39:47,843 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.0960s
+2025-06-04 13:39:47,862 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1184s
+2025-06-04 13:39:47,865 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1326s
+2025-06-04 13:39:47,866 [ERROR] HTTPException: status_code=500, detail=Internal Server Error for testing
+2025-06-04 13:39:48,950 [ERROR] HTTPException: status_code=500, detail=Internal Server Error for testing
+2025-06-04 13:39:49,069 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1490s
+2025-06-04 13:39:49,069 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1346s
+2025-06-04 13:39:49,075 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1421s
+2025-06-04 13:39:49,076 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1584s
+2025-06-04 13:39:49,080 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1472s
+2025-06-04 13:39:49,082 [ERROR] HTTPException: status_code=500, detail=Internal Server Error for testing
+2025-06-04 13:39:50,153 [ERROR] HTTPException: status_code=500, detail=Internal Server Error for testing
+2025-06-04 13:39:50,265 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1137s
+2025-06-04 13:39:50,268 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1298s
+2025-06-04 13:39:50,269 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1309s
+2025-06-04 13:39:50,277 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1277s
+2025-06-04 13:39:50,279 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1295s
+2025-06-04 13:39:50,285 [ERROR] HTTPException: status_code=500, detail=Internal Server Error for testing
+2025-06-04 13:39:51,357 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.0154s
+2025-06-04 13:39:51,365 [ERROR] HTTPException: status_code=500, detail=Internal Server Error for testing
+2025-06-04 13:39:51,419 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.0533s
+2025-06-04 13:39:51,429 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.0654s
+2025-06-04 13:39:51,435 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.0731s
+2025-06-04 13:39:51,445 [ERROR] HTTPException: status_code=500, detail=Internal Server Error for testing
+2025-06-04 13:39:51,459 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.0172s
+2025-06-04 13:39:52,604 [ERROR] HTTPException: status_code=500, detail=Internal Server Error for testing
+2025-06-04 13:39:52,617 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1004s
+2025-06-04 13:39:52,627 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1150s
+2025-06-04 13:39:52,633 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1227s
+2025-06-04 13:39:52,669 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1049s
+2025-06-04 13:39:52,670 [ERROR] HTTPException: status_code=500, detail=Internal Server Error for testing
+2025-06-04 13:39:52,672 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1065s
+2025-06-04 13:39:53,742 [ERROR] HTTPException: status_code=500, detail=Internal Server Error for testing
+2025-06-04 13:39:53,831 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.0917s
+2025-06-04 13:39:53,844 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1018s
+2025-06-04 13:39:53,844 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1146s
+2025-06-04 13:39:53,859 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1201s
+2025-06-04 13:39:53,861 [ERROR] HTTPException: status_code=500, detail=Internal Server Error for testing
+2025-06-04 13:39:53,862 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1318s
+2025-06-04 13:39:54,918 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.0144s
+2025-06-04 13:39:54,940 [ERROR] HTTPException: status_code=500, detail=Internal Server Error for testing
+2025-06-04 13:39:55,021 [ERROR] HTTPException: status_code=500, detail=Internal Server Error for testing
+2025-06-04 13:39:55,062 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1396s
+2025-06-04 13:39:55,062 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1388s
+2025-06-04 13:39:55,065 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1430s
+2025-06-04 13:39:55,067 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1434s
+2025-06-04 13:39:56,120 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.0153s
+2025-06-04 13:39:56,137 [ERROR] HTTPException: status_code=500, detail=Internal Server Error for testing
+2025-06-04 13:39:56,198 [ERROR] HTTPException: status_code=500, detail=Internal Server Error for testing
+2025-06-04 13:39:56,239 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1123s
+2025-06-04 13:39:56,245 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1202s
+2025-06-04 13:39:56,247 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1220s
+2025-06-04 13:39:56,248 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1220s
+2025-06-04 13:39:57,344 [ERROR] HTTPException: status_code=500, detail=Internal Server Error for testing
+2025-06-04 13:39:57,421 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1127s
+2025-06-04 13:39:57,443 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1485s
+2025-06-04 13:39:57,449 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1523s
+2025-06-04 13:39:57,452 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1561s
+2025-06-04 13:39:57,453 [ERROR] HTTPException: status_code=500, detail=Internal Server Error for testing
+2025-06-04 13:39:57,455 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1505s
+2025-06-04 13:39:58,523 [ERROR] HTTPException: status_code=500, detail=Internal Server Error for testing
+2025-06-04 13:39:58,619 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.0960s
+2025-06-04 13:39:58,621 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1080s
+2025-06-04 13:39:58,622 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.0957s
+2025-06-04 13:39:58,628 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1197s
+2025-06-04 13:39:58,632 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1260s
+2025-06-04 13:39:58,635 [ERROR] HTTPException: status_code=500, detail=Internal Server Error for testing
+2025-06-04 13:39:59,696 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.0149s
+2025-06-04 13:39:59,719 [ERROR] HTTPException: status_code=500, detail=Internal Server Error for testing
+2025-06-04 13:39:59,795 [ERROR] HTTPException: status_code=500, detail=Internal Server Error for testing
+2025-06-04 13:39:59,817 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1204s
+2025-06-04 13:39:59,819 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1200s
+2025-06-04 13:39:59,824 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1065s
+2025-06-04 13:39:59,831 [INFO] Prediction done. Output=0, Confidence=0.80, Time=0.1115s
+2025-06-04 13:45:22,956 [WARNING] Expected 30 features, but got 1
+2025-06-04 13:45:22,961 [ERROR] Prediction error
+Traceback (most recent call last):
+  File "/app/app.py", line 77, in predict
+    raise HTTPException(status_code=400, detail=msg)
+fastapi.exceptions.HTTPException: 400: Expected 30 features, but got 1
+2025-06-04 13:45:22,972 [ERROR] HTTPException: status_code=500, detail=Lỗi khi xử lý dữ liệu: 400: Expected 30 features, but got 1
+2025-06-04 13:45:23,860 [WARNING] Expected 30 features, but got 1
+2025-06-04 13:45:23,863 [ERROR] Prediction error
+Traceback (most recent call last):
+  File "/app/app.py", line 77, in predict
+    raise HTTPException(status_code=400, detail=msg)
+fastapi.exceptions.HTTPException: 400: Expected 30 features, but got 1
+2025-06-04 13:45:23,868 [ERROR] HTTPException: status_code=500, detail=Lỗi khi xử lý dữ liệu: 400: Expected 30 features, but got 1
+2025-06-04 13:45:38,176 [ERROR] HTTPException: status_code=500, detail=Internal Server Error for testing
+2025-06-04 13:45:38,925 [ERROR] HTTPException: status_code=500, detail=Internal Server Error for testing
+2025-06-04 13:45:39,292 [ERROR] HTTPException: status_code=500, detail=Internal Server Error for testing
+2025-06-04 14:03:26,843 [WARNING] Expected 30 features, but got 1
+2025-06-04 14:03:26,854 [ERROR] Prediction error
+Traceback (most recent call last):
+  File "/app/app.py", line 77, in predict
+    raise HTTPException(status_code=400, detail=msg)
+fastapi.exceptions.HTTPException: 400: Expected 30 features, but got 1
+2025-06-04 14:03:26,858 [ERROR] HTTPException: status_code=500, detail=Lỗi khi xử lý dữ liệu: 400: Expected 30 features, but got 1
+2025-06-04 14:03:27,776 [WARNING] Expected 30 features, but got 1
+2025-06-04 14:03:27,778 [ERROR] Prediction error
+Traceback (most recent call last):
+  File "/app/app.py", line 77, in predict
+    raise HTTPException(status_code=400, detail=msg)
+fastapi.exceptions.HTTPException: 400: Expected 30 features, but got 1
+2025-06-04 14:03:27,782 [ERROR] HTTPException: status_code=500, detail=Lỗi khi xử lý dữ liệu: 400: Expected 30 features, but got 1
+2025-06-04 14:11:44,545 [WARNING] Expected 30 features, but got 1
+2025-06-04 14:11:44,557 [ERROR] Prediction error
+Traceback (most recent call last):
+  File "/app/app.py", line 77, in predict
+    raise HTTPException(status_code=400, detail=msg)
+fastapi.exceptions.HTTPException: 400: Expected 30 features, but got 1
+2025-06-04 14:11:44,564 [ERROR] HTTPException: status_code=500, detail=Lỗi khi xử lý dữ liệu: 400: Expected 30 features, but got 1
+2025-06-04 14:11:45,263 [WARNING] Expected 30 features, but got 1
+2025-06-04 14:11:45,266 [ERROR] Prediction error
+Traceback (most recent call last):
+  File "/app/app.py", line 77, in predict
+    raise HTTPException(status_code=400, detail=msg)
+fastapi.exceptions.HTTPException: 400: Expected 30 features, but got 1
+2025-06-04 14:11:45,271 [ERROR] HTTPException: status_code=500, detail=Lỗi khi xử lý dữ liệu: 400: Expected 30 features, but got 1
+2025-06-04 14:11:45,632 [WARNING] Expected 30 features, but got 1
+2025-06-04 14:11:45,634 [ERROR] Prediction error
+Traceback (most recent call last):
+  File "/app/app.py", line 77, in predict
+    raise HTTPException(status_code=400, detail=msg)
+fastapi.exceptions.HTTPException: 400: Expected 30 features, but got 1
+2025-06-04 14:11:45,638 [ERROR] HTTPException: status_code=500, detail=Lỗi khi xử lý dữ liệu: 400: Expected 30 features, but got 1
+2025-06-04 14:25:11,529 [ERROR] HTTPException: status_code=500, detail=Internal Server Error for testing
+2025-06-04 14:25:12,408 [ERROR] HTTPException: status_code=500, detail=Internal Server Error for testing

@@ -1,0 +1,28 @@
+route:
+  receiver: gmail
+
+receivers:
+  - name: gmail
+    email_configs:
+      - to: # Thay bằng mail bạn muốn nhận tin 
+        from: # Thay bằng mail bạn tạo App Password
+        smarthost: smtp.gmail.com:587
+        auth_username: # Thay bằng mail bạn tạo App Password 
+        auth_password: # Thay bằng App Password bạn tạo
+        require_tls: true
+        send_resolved: true
+        html: |-
+          {{ if eq .Status "firing" }}
+          <b>🔥 ALERT FIRING 🔥</b><br/>
+          {{ range .Alerts }}
+          <b>Alert:</b> {{ .Labels.alertname }}<br/>
+          <b>Severity:</b> {{ .Labels.severity }}<br/>
+          <b>Summary:</b> {{ .Annotations.summary }}<br/>
+          <b>Description:</b> {{ .Annotations.description }}<br/><br/>
+          {{ end }}
+          {{ else }}
+          <b>✅ ALERT RESOLVED</b><br/>
+          {{ range .Alerts }}
+          <b>Alert:</b> {{ .Labels.alertname }} is now resolved<br/>
+          {{ end }}
+          {{ end }}

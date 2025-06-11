@@ -54,6 +54,19 @@
   - [3. Cách chạy trên server được cấp](#3-cách-chạy-trên-server-được-cấp)
   - [4. Lưu ý](#4-lưu-ý)
 - [🎥 Video demo API](#-video-demo-1)
+- [📊 Monitoring & Logging Setup Guide](#-monitoring--logging-setup-guide)
+  - [📁 Chuẩn bị thư mục](#-chuẩn-bị-thư-mục)
+  - [🖥️ Cài đặt & chạy trên máy local](#-cài-đặt--chạy-trên-máy-local)
+    - [🔹 Trường hợp 1: Dùng image có sẵn từ DockerHub *(Nhanh gọn)*](#-trường-hợp-1-dùng-image-có-sẵn-từ-dockerhub-nhanh-gọn)
+    - [🔹 Trường hợp 2: Tự build image từ mã nguồn](#-trường-hợp-2-tự-build-image-từ-mã-nguồn)
+    - [🔍 Kiểm tra API](#-kiểm-tra-api)
+  - [🌐 Cách cài đặt trên server](#-cách-cài-đặt-trên-server)
+  - [📈 Truy cập Grafana để xem Monitoring & Logging](#-truy-cập-grafana-để-xem-monitoring--logging)
+  - [⚙️ Cấu hình Grafana](#-cấu-hình-grafana)
+    - [🔹 Dashboard 1 - Tài nguyên hệ thống](#-dashboard-1---tài-nguyên-hệ-thống)
+    - [🔹 Dashboard 2 - Ứng dụng ML](#-dashboard-2---ứng-dụng-ml)
+  - [📜 Xem log với Loki](#-xem-log-với-loki)
+  - [🎥 Video demo](#-video-demo-2)
 
 ---
 

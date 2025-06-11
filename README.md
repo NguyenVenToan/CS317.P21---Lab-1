@@ -63,8 +63,8 @@
   - [🌐 Cách cài đặt trên server](#-cách-cài-đặt-trên-server)
   - [📈 Truy cập Grafana để xem Monitoring & Logging](#-truy-cập-grafana-để-xem-monitoring--logging)
   - [⚙️ Cấu hình Grafana](#-cấu-hình-grafana)
-    - [🔹 Dashboard 1 - Tài nguyên hệ thống](#-dashboard-1)
-    - [🔹 Dashboard 2 - Ứng dụng ML](#-dashboard-2)
+    - [🔹 Dashboard 1](#-dashboard-1)
+    - [🔹 Dashboard 2](#-dashboard-2)
   - [📜 Xem log với Loki](#-xem-log-với-loki)
   - [🎥 Video demo](#-video-demo-2)
 
